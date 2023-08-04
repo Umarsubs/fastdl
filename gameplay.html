@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My COD4 Game Server</title>
+    <title>Habibi Promod | COD4</title>
+    <!-- Add the favicon link here -->
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <!-- Remaining CSS and other content -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("background.jpg"); /* Add the path to your graphical background image */
+            background-image: url("/images/background.png"); /* Add the path to your graphical background image */
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to make the footer sticky */
         }
         header {
-            background-color: #333;
+            background-color: #111; /* Set the header background to transparent */
             color: #fff;
             padding: 20px;
-            text-align: center;
+            position: relative; /* Set the header position to relative */
+        }
+        .logo {
+            max-width: 120px; /* Adjust the logo size as needed */
+            display: inline-block; /* Set the logo display to inline-block */
+            vertical-align: middle; /* Vertically align the logo and h1 elements */
+        }
+        h1 {
+            display: inline-block; /* Set the h1 display to inline-block */
+            margin: 0;
+            vertical-align: middle; /* Vertically align the logo and h1 elements */
+            padding-left: 60px; /* Add left padding to the h1 element */
         }
         nav {
             background-color: #444;
@@ -40,7 +57,8 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8); /* Light transparent background for content sections */
             border-radius: 10px;
-            margin: 20px;
+            margin: 70px;
+            flex: 1; /* Fill the available vertical space in the flex container */
         }
         section h2 {
             border-bottom: 2px solid #333;
@@ -56,24 +74,29 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+            margin-top: auto; /* Push the footer to the bottom of the page */
         }
     </style>
 </head>
 <body>
-    <!-- Navigation links to other pages -->
+    <header>
+        <img class="logo" src="/images/logo.png" alt="COD4 Game Server Logo"> <!-- Add the path to your logo image -->
+        <h1 style="margin: 0;">Welcome To Habibi Promod's Website!!!</h1>
+    </header>
     <nav>
+        <!-- Navigation links to other pages -->
         <a href="index.html">Home</a>
+		<a href="fast_dl.html">Mod FastDl</a>
         <a href="server_rules.html">Server Rules</a>
-        <a href="gameplay.html">Gameplay</a>
         <a href="contact.html">Contact</a>
     </nav>
     <section>
-        <h2 style="color: #444;">Gameplay</h2>
-        <p style="color: #333;">
-            Provide insights into the gameplay experience on your COD4 server. You can include tips, strategies, and information on how to get the most out of the game.
+        <h2>Page Not Found!!</h2>
+        <p>
+            404 ERROR!!!
         </p>
     </section>
-    <footer style="background-color: #333; color: #fff; padding: 10px; text-align: center;">
+    <footer>
         <p>&copy; 2023 My COD4 Game Server. All rights reserved.</p>
     </footer>
 </body>
